@@ -34,6 +34,7 @@ button {
 
 .navbar {
   color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
   .navbar-brand {
     max-width: 162px;
     padding: 0;
@@ -124,7 +125,7 @@ a.start-button {
       transition: all 0.15s ease-in;
       li {
         &:not(:last-child) {
-          margin-bottom: 10px;
+          margin-bottom: 15px;
         }
         a {
           display: flex;
@@ -141,7 +142,7 @@ a.start-button {
           &:hover {
             background-color: #ffffff;
             color: $primary-color;
-            transform: scale(1.05);
+            transform: scale(1.2);
           }
         }
       }
@@ -258,12 +259,11 @@ a.start-button {
     &::before {
       position: absolute;
       left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      bottom: 0;
       content: "";
       width: 48%;
       height: 100%;
-      background-position: center left;
+      background-position: 0 80%;
       background-image: url("../img/branded-website-bg.png");
       background-repeat: no-repeat;
       background-size: contain;
@@ -272,26 +272,11 @@ a.start-button {
       position: relative;
       z-index: 1;
       .text-content-block {
-        h6.sub-head-text {
-          font-size: 18px;
-          font-weight: 500;
-        }
         .text-block {
-          .show-more-less {
-            color: $primary-color;
-            display: inline-block;
-            img {
-              transition: all 0.15s ease-in;
-            }
-            &.active {
-              .more {
-                display: none !important;
-              }
-              .less {
-                display: inline-block !important;
-              }
-              img {
-                transform: scale(-1);
+          ul {
+            li {
+              &:not(:last-child) {
+                margin-bottom: 10px;
               }
             }
           }
@@ -374,10 +359,8 @@ a.start-button {
     color: #ffffff;
     .text-content {
       margin-top: 15%;
-      h6 {
-        font-size: 25px;
-        font-weight: 500;
-      }
+      width: max-content;
+      max-width: 100%;
       h3 {
         font-size: 58px;
         font-weight: 500;
@@ -538,12 +521,35 @@ footer {
       }
     }
   }
+  .social-media-links {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      a {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        color: $primary-color !important;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ffffff;
+        transition: all 0.15s ease-in;
+        font-size: 18px;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
   .navbar {
     .navbar-brand {
-      max-width: 102px;
+      font-size: 45px;
     }
     .call-button {
       font-size: 16px;
@@ -557,6 +563,30 @@ footer {
   }
   .landing-page {
     .banner {
+      .social-media-links{
+        top: auto;
+        bottom: 0;
+        left: auto;
+        transform: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        li{
+          display: inline-block;
+          &:not(:last-child){
+            margin-right: 10px;
+          }
+        }
+      }
+      .banner-details{
+        h1{
+          font-size: 30px;
+        }
+        h2{
+          font-size: 20px;
+        }
+      }
     }
     .our-services {
       margin-top: 30px;
@@ -597,7 +627,6 @@ footer {
         .swiper {
           max-width: calc(100% - 26px);
           top: 13px;
-          left: 13px;
         }
       }
     }
@@ -617,6 +646,8 @@ footer {
         }
       }
       .text-content {
+        margin: 0 auto;
+        padding-top: 30px;
         h6 {
           font-size: 16px;
         }
@@ -659,22 +690,11 @@ footer {
     font-size: 35px;
   }
   .landing-page {
-    .banner {
-      .banner-form-block {
-        .container {
-          .banner-form {
-            transform: none;
-            box-shadow: none;
-          }
-        }
-      }
-    }
     .mac-slider {
       .mac-block {
         .swiper {
-          max-width: calc(100% - 70px);
-          top: 35.5px;
-          left: 35.5px;
+          max-width: calc(100% - 45px);
+          top: 25px;
         }
       }
     }
@@ -688,17 +708,6 @@ footer {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .landing-page {
-    .mac-slider {
-      .mac-block {
-        .swiper {
-          max-width: calc(100% - 70px);
-          top: 35.5px;
-          left: 35.5px;
-        }
-      }
-    }
-  }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
 }

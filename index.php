@@ -11,10 +11,10 @@
             </div>
         </div>
         <ul class="social-media-links list-inline">
-            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://www.facebook.com/nikhil.varghese.1654/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/nikhil-varghese-278a4a13b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/worldofnikhil/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://wa.me/+918606765147?text=Hi" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
         </ul>
     </div>
     <div class="our-services text-center my-5 mt-5 mt-sm-2">
@@ -39,7 +39,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <h4>Branded Website<br />+ MLS + CRM</h4>
+                                <h4>Responsive design and<br />cross-browser compatibility</h4>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <h4>Lead<br />Generation</h4>
+                                <h4>user-friendly & interactive<br />web features</h4>
                             </div>
                         </div>
                     </div>
@@ -79,8 +79,8 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <h4>Branded Website<br />
-                                    + MLS + CRM</h4>
+                                <h4>Websites With<br />
+                                    Latest Technologies</h4>
                             </div>
                         </div>
                     </div>
@@ -92,19 +92,28 @@
         <div class="inner-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 mt-auto">
                         <img src="assets/img/branded-website.png" alt="" class="img-fluid d-block ml-auto">
                     </div>
                     <div class="col-sm-6 my-auto">
                         <div class="text-content-block ps-3">
-                            <h6 class="sub-head-text">Branded website with MLS Listing & CRM</h6>
-                            <h3 class="common-head">Just <span>$1 Per Day</span></h3>
+                            <h3 class="common-head">Custom <span>Websites</span></h3>
                             <div class="text-block">
-                                Get your branded digital presence with an investment of just $1 per day. With over 400+ real-estate websites created, we design your website to suit your outlook…
-                                <a href="javascript:void(0)" class="show-more-less">Show <span class="more d-inline-block">More</span><span class="less d-none">Less</span> <img src="assets/img/arrow-down.png" alt="" class="img-fluid">
-                                </a>
+                                <ul class="text-start ps-4">
+                                    <li>Developing and maintaining web applications that are optimised for various devices and browsers</li>
+                                    <li>Implementing responsive design and cross-browser compatibility for different screen sizes
+                                    </li>
+                                    <li>Developing user-friendly and interactive web features such as buttons, forms, and menus
+                                    </li>
+                                    <li>Using JavaScript libraries and frameworks such as React or Angular to build complex web applications and interactive features
+                                    </li>
+                                    <li>Writing and maintaining code that is clean, efficient, and easy to understand
+                                    </li>
+                                    <li>Testing web applications to ensure they are bug-free and work seamlessly for the end-users.
+                                    </li>
+                                </ul>
                             </div>
-                            <a href="" class="start-button">START NOW</a>
+                            <a href="#contact-now-block" class="start-button">CONTACT NOW</a>
                         </div>
                     </div>
                 </div>
@@ -113,10 +122,10 @@
     </div>
     <div class="mac-slider my-4 my-sm-5 py-4 py-sm-5">
         <div class="container">
+            <h3 class="common-head text-center mb-3">Completed <span>Works</span></h3>
             <div class="mac-block">
                 <img src="assets/img/mac.png" alt="" class="img-fluid w-100 mac">
                 <swiper-container id="mac-swiper" init="false" class="mySwiper swiper" loop="true" autoplay="true" autoplay-delay="3000" speed="750">
-                    <!-- <swiper-slide><img src="assets/img/mac-slider-item.jpg" alt="" class="img-fluid w-100"></swiper-slide> -->
                     <swiper-slide><img src="assets/img/mac-slider-item1.webp" alt="" class="img-fluid w-100"></swiper-slide>
                     <swiper-slide><img src="assets/img/mac-slider-item2.webp" alt="" class="img-fluid w-100"></swiper-slide>
                     <swiper-slide><img src="assets/img/mac-slider-item3.webp" alt="" class="img-fluid w-100"></swiper-slide>
@@ -138,10 +147,9 @@
                 </div>
                 <div class="col-sm-6 my-auto">
                     <div class="text-content">
-                        <h6>Are you a Realtor?</h6>
-                        <h3>Struggling<br />
-                            To Get Leads?</h3>
-                        <p class="mb-0">Getting Maximum Leads For You Is What We Do Best!</p>
+                        <h3>Searching for a<br />
+                            Custom Website</h3>
+                        <a href="#contact-now-block" class="start-button mx-auto">CONTACT NOW</a>
                     </div>
                 </div>
             </div>
@@ -163,117 +171,54 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-8 order-3 order-sm-2">
-                    <!-- <div class="swiper testimnnialswiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="common-bg-block">
-                                        I got my fully customised website within 3 days as promised. Great customer support and
-                                        professionally built tools. Agentroof is definitely one I would recommend to all
-                                        agents!
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="common-bg-block">
-                                        “The support team is just amazing. Any time you contact them they respond. I can confidently say that they are better priced than all other competitors. Since day one you guys have gone above and beyond to answer all my questions. Thank you for the hard work.”
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="common-bg-block">
-                                        I have been dealing with many companies from canada and india for the past few years. But the services rendered by Agent Roof is something above all. The quick response to my complaints and suggestions is awesome. I have managed to increase my business manifold with the help of talented guys in the company. Wishing them all the best.
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     <swiper-container class="mySwiper swiper testimnnialswiper" loop="true" autoplay="true" autoplay-delay="3000" speed="750" thumbs-swiper=".testimnnialswiperthumb" space-between="30">
                         <swiper-slide>
                             <div class="common-bg-block">
-                                I got my fully customised website within 3 days as promised. Great customer support and
-                                professionally built tools. Agentroof is definitely one I would recommend to all
-                                agents!
+                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                             </div>
                         </swiper-slide>
                         <swiper-slide>
                             <div class="common-bg-block">
-                                “The support team is just amazing. Any time you contact them they respond. I can confidently say that they are better priced than all other competitors. Since day one you guys have gone above and beyond to answer all my questions. Thank you for the hard work.”
+                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                             </div>
                         </swiper-slide>
                         <swiper-slide>
                             <div class="common-bg-block">
-                                I have been dealing with many companies from canada and india for the past few years. But the services rendered by Agent Roof is something above all. The quick response to my complaints and suggestions is awesome. I have managed to increase my business manifold with the help of talented guys in the company. Wishing them all the best.
+                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                             </div>
                         </swiper-slide>
                     </swiper-container>
-                    <!-- aaa -->
-                    <!-- <div thumbsSlider="" class="swiper testimnnialswiperthumb text-center mb-3">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="assets/img/babitha.png" alt="Babitha" class="img-fluid">
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">
-                                            Babitha Gupta
-                                        </div>
-                                        <div class="designation">Agent</div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="assets/img/manoj.png" alt="Manoj" class="img-fluid">
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">
-                                            Manoj Karatha
-                                        </div>
-                                        <div class="designation">Agent</div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="assets/img/vijay.png" alt="Vijay" class="img-fluid">
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">
-                                            Vijay Nair
-                                        </div>
-                                        <div class="designation">Agent</div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div> -->
                     <swiper-container class="mySwiper swiper testimnnialswiperthumb" loop="true" slides-per-view="3" free-mode="true" watch-slides-progress="true">
                         <swiper-slide>
                             <div class="image">
-                                <img src="assets/img/babitha.png" alt="Babitha" class="img-fluid">
+                                <img src="assets/img/one.png" alt="" class="img-fluid">
                             </div>
                             <div class="details">
                                 <div class="name">
-                                    Babitha Gupta
+                                    John Doe
                                 </div>
-                                <div class="designation">Agent</div>
+                                <div class="designation">designation</div>
                             </div>
                         </swiper-slide>
                         <swiper-slide>
                             <div class="image">
-                                <img src="assets/img/manoj.png" alt="Manoj" class="img-fluid">
+                                <img src="assets/img/two.png" alt="" class="img-fluid">
                             </div>
                             <div class="details">
                                 <div class="name">
-                                    Manoj Karatha
+                                    John Doe
                                 </div>
-                                <div class="designation">Agent</div>
+                                <div class="designation">designation</div>
                             </div>
                         </swiper-slide>
                         <swiper-slide>
                             <div class="image">
-                                <img src="assets/img/vijay.png" alt="Vijay" class="img-fluid">
+                                <img src="assets/img/three.png" alt="" class="img-fluid">
                             </div>
                             <div class="details">
-                                <div class="name">
-                                    Vijay Nair
+                                <div class="name">John Doe
                                 </div>
-                                <div class="designation">Agent</div>
+                                <div class="designation">designation</div>
                             </div>
                         </swiper-slide>
                     </swiper-container>
@@ -288,7 +233,7 @@
             </div>
         </div>
     </div>
-    <div class="some-salient py-5" style="background-image: url('assets/img/some-salient-bg.jpg');">
+    <div class="some-salient py-5" id="contact-now-block" style="background-image: url('assets/img/some-salient-bg.jpg');">
         <div class="some-salient-inner-block">
             <div class="container">
                 <h3 class="text-white text-center mb-4">CONTACT NOW</h3>

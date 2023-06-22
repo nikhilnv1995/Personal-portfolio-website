@@ -1,372 +1,204 @@
-<footer>
-    <a href="" class="to-top d-none d-sm-block"><img src="assets/img/top.png" alt="" class="img-fluid"></a>
-    <div class="container">
-        <div class="footer-top">
-            <div class="footer-logo">
-                <a href=""><img src="assets/img/logo.svg" alt=""></a>
-            </div>
-            <div class="footer-contact">
-                <ul class="list-inline contact-list">
-                    <li class="list-inline-item">
-                        <p>CALL US</p>
-                        <a href="">+64 21 231 9631</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <p>EMAIL US</p>
-                        <a href="">binurajan@portabote.co.nz​</a>
-                    </li>
-                </ul>
-                <ul class="list-inline social">
-                    <li class="list-inline-item"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <ul class="list-inline text-center">
-                <li class="list-inline-item"><a href="">Home</a></li>
-                <li class="list-inline-item"><a href="">About</a></li>
-                <li class="list-inline-item"><a href="">Models</a></li>
-                <li class="list-inline-item"><a href="">Accessories</a></li>
-                <li class="list-inline-item"><a href="">Contact</a></li>
-            </ul>
-            <p class="text-center">Copyright © 2020 Portaboat New Zealand</p>
-        </div>
-    </div>
-</footer>
-<!-- from submission -->
-<script src="assets/js/php-email-form.js"></script>
-<!-- form submission -->
-<script>
-    // AOS.init();
-    $(document).ready(function () {
-        $('#video-popup').on('hidden.bs.modal', function (e) {
-            var $iframes = $(e.target).find('iframe');
-            $iframes.each(function (index, iframe) {
-                $(iframe).attr('src', $(iframe).attr('src'));
-            });
-        })
+ <footer>
+     <div class="container">
+         <ul class="d-block d-sm-flex flex-wrap justify-content-center text-sm-center text-white mb-0 list-inline">
+             <li><a href="tel:+918606765147"><img src="assets/img/call-footer.svg" alt="call" class="img-fluid">+91 8606765147</a></li>
+             <li><a href="mailto:nikhilnellikkulam92@gmail.com"><img src="assets/img/mail-footer.svg" alt="call" class="img-fluid">nikhilnellikkulam92@gmail.com</a></li>
+         </ul>
+     </div>
+ </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+ <script src="assets/js/core.js"></script>
+ <script src="assets/js/script.js"></script>
+ <script type="text/javascript">
+     const instance = new Typewriter('#typewriter', {
+         strings: ['UI/UX Developer', 'Responsive website for all devices', 'Using HTML, CSS & JAVASCRIPT'],
+         autoStart: true,
+         loop: true,
+     });
+ </script>
+ <script>
+     // swiper element
+     const swiperEl = document.querySelector('#mac-swiper');
 
+     // swiper parameters
+     const swiperParams = {
+         pagination: {
+             el: ".swiper-paginationmac",
+             type: "fraction",
+         },
+         navigation: {
+             nextEl: ".arrow-next",
+             prevEl: ".arrow-prev",
+         },
+         on: {
+             init() {
+                 // ...
+             },
+         },
+     };
 
-        var btn = $('.to-top');
+     // now we need to assign all parameters to Swiper element
+     Object.assign(swiperEl, swiperParams);
 
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
+     // and now initialize it
+     swiperEl.initialize();
+ </script>
+ <script>
+     // swiper element
+     const swiperEl1 = document.querySelector('#mac-swiper2');
 
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({scrollTop: 0}, '300');
-        });
-        $("#grid-view").click(function () {
-            $(".list-view").css({"display": "none"});
-            $(".grid-view").css({"display": "block"});
-            $("#grid-view").css({"opacity": "1"});
-            $("#list-view").css({"opacity": "0.5"});
-        });
-        $("#list-view").click(function () {
-            $(".list-view").css({"display": "block"});
-            $(".grid-view").css({"display": "none"});
-            $("#grid-view").css({"opacity": "0.5"});
-            $("#list-view").css({"opacity": "1"});
-        });
-        var owl = $('.loading-slider');
-        owl.owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 15,
-            nav: false,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            autoplaySpeed: 2000,
-        });
-        var owl = $('.thumb-images');
-        owl.owlCarousel({
-            items: 3,
-            loop: false,
-            margin: 15,
-            nav: true,
-            dots: false,
-            autoplay: false,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            autoplaySpeed: 2000,
-        });
-        $('.thumb').click(function (event) {
-            var img = $('.image-view img');
-            var alink = $('.image-view a');
-            img.attr('src', $(this).attr('data-src'));
-            alink.attr('href', $(this).attr('data-src'));
-            $(".image-view iframe").removeClass("main-nav");
-            $(".image-view .popup-link").removeClass("main-nav");
-        });
-        $(".support .content-block .plans .plan a.view-detail.premium").click(function () {
-            $(".support .content-block .plans .plan a.view-detail.premium").toggleClass("show");
-            $(".price-block.premium").toggleClass("show");
-        });
-        var owl = $('.banner-slider');
-        owl.owlCarousel({
-            loop: true,
-            nav: true,
-            // margin: 0,
-            dots: false,
-            center: false,
-            autoplay: false,
-            autoplayTimeout: 5500,
-            autoplayHoverPause: true,
-            autoplaySpeed: 2500,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                992: {
-                    items: 1
-                },
-                1200: {
-                    items: 1
-                },
+     // swiper parameters
+     const swiperParams1 = {
+         pagination: {
+             el: ".swiper-pagination1",
+             clickable: true,
+         },
+         on: {
+             init() {
+                 // ...
+             },
+         },
+     };
 
-                1600: {
-                    items: 1
-                }
-            }
-        });
-        var owl = $('.pdt-slider');
-        owl.owlCarousel({
-            loop: true,
-            nav: true,
-            // margin: 0,
-            dots: false,
-            center: false,
-            autoplay: false,
-            autoplayTimeout: 5500,
-            autoplayHoverPause: true,
-            autoplaySpeed: 2500,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                992: {
-                    items: 1
-                },
-                1200: {
-                    items: 1
-                },
+     // now we need to assign all parameters to Swiper element
+     Object.assign(swiperEl1, swiperParams1);
 
-                1600: {
-                    items: 1
-                }
-            }
-        });
-        var owl = $('.review-slider');
-        owl.owlCarousel({
-            loop: true,
-            nav: false,
-            // margin: 0,
-            dots: true,
-            center: false,
-            autoplay: false,
-            autoplayTimeout: 5500,
-            autoplayHoverPause: true,
-            autoplaySpeed: 2500,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                992: {
-                    items: 1
-                },
-                1200: {
-                    items: 1
-                },
+     // and now initialize it
+     swiperEl1.initialize();
+ </script>
+ <script>
+     // swiper element
+     const swiperEl2 = document.querySelector('#macswiper3');
 
-                1600: {
-                    items: 1
-                }
-            }
-        });
-        var owl = $('.client-slider');
-        owl.owlCarousel({
-            loop: true,
-            nav: true,
-            // margin: 0,
-            dots: false,
-            center: false,
-            autoplay: false,
-            autoplayTimeout: 5500,
-            autoplayHoverPause: true,
-            autoplaySpeed: 2500,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                992: {
-                    items: 1.5
-                },
-                1200: {
-                    items: 1.5
-                },
+     // swiper parameters
+     const swiperParams2 = {
+         pagination: {
+             el: ".swiper-pagination2",
+             clickable: true,
+         },
+         on: {
+             init() {
+                 // ...
+             },
+         },
+     };
 
-                1600: {
-                    items: 1.5
-                }
-            }
-        });
-        var owl = $('.news-slider');
-        owl.owlCarousel({
-            loop: true,
-            nav: false,
-            margin: 30,
-            dots: true,
-            center: false,
-            autoplay: false,
-            autoplayTimeout: 5500,
-            autoplayHoverPause: true,
-            autoplaySpeed: 2500,
-            responsive: {
-                0: {
-                    items: 1,
-                    margin: 15
-                },
-                600: {
-                    items: 2
-                },
-                992: {
-                    items: 3
-                },
-                1200: {
-                    items: 3
-                },
+     // now we need to assign all parameters to Swiper element
+     Object.assign(swiperEl2, swiperParams2);
 
-                1600: {
-                    items: 3
-                }
-            }
-        });
-        var owl = $('.gallery-slider');
-        owl.owlCarousel({
-            loop: true,
-            nav: true,
-            // margin: 30,
-            dots: false,
-            center: false,
-            autoplay: false,
-            autoplayTimeout: 5500,
-            autoplayHoverPause: true,
-            autoplaySpeed: 2500,
-            responsive: {
-                0: {
-                    items: 2
-                },
-                600: {
-                    items: 3
-                },
-                992: {
-                    items: 4
-                },
-                1200: {
-                    items: 4
-                },
+     // and now initialize it
+     swiperEl2.initialize();
+ </script>
+ <script>
+     // swiper element
+     const swiperEl3 = document.querySelector('#ipadswiper');
 
-                1600: {
-                    items: 4
-                }
-            }
-        });
-        var owl = $('.accessories-slider');
-        owl.owlCarousel({
-            loop: true,
-            nav: true,
-            margin: 30,
-            dots: false,
-            center: false,
-            autoplay: false,
-            autoplayTimeout: 5500,
-            autoplayHoverPause: true,
-            autoplaySpeed: 2500,
-            responsive: {
-                0: {
-                    items: 1.75,
-                    margin: 15
-                },
-                600: {
-                    items: 3
-                },
-                992: {
-                    items: 4
-                },
-                1200: {
-                    items: 4
-                },
+     // swiper parameters
+     const swiperParams3 = {
+         navigation: {
+             nextEl: ".arrow-next3",
+             prevEl: ".arrow-prev3",
+         },
+         on: {
+             init() {
+                 // ...
+             },
+         },
+     };
 
-                1600: {
-                    items: 4
-                }
-            }
-        });
-        // $('.product-slider').on("dragged.owl.carousel", function (e) {
-        //     console.log('center item is:' + (e.item.index + 1));
-        // });
-        var owl = $('.product-slider');
-        owl.owlCarousel({
-            loop: true,
-            nav: true,
-            margin: 30,
-            dots: false,
-            // dotsData: true,
-            center: true,
-            autoplay: true,
-            autoplayTimeout: 5500,
-            autoplayHoverPause: true,
-            autoplaySpeed: 1250,
-            responsive: {
-                0: {
-                    items: 1.3
-                },
-                600: {
-                    items: 3
-                },
-                992: {
-                    items: 3
-                },
-                1200: {
-                    items: 5
-                },
+     // now we need to assign all parameters to Swiper element
+     Object.assign(swiperEl3, swiperParams3);
 
-                1600: {
-                    items: 5
-                }
-            }
-        });
-        $('[data-toggle="tooltip"]').tooltip()
-        $(".loading").click(function () {
-            loop();
-        });
+     // and now initialize it
+     swiperEl3.initialize();
+ </script>
+ <script>
+     var swiper3 = new Swiper(".macswiper", {
+         // grabCursor: true,
+         // effect: "creative",
+         // creativeEffect: {
+         //     prev: {
+         //         shadow: true,
+         //         translate: [0, 0, -400],
+         //     },
+         //     next: {
+         //         translate: ["100%", 0, 0],
+         //     },
+         // },
+         slidesPerView: 1,
+         spaceBetween: 0,
+         // effect: 'flip',
+         // speed: 500,
+         loop: true,
+         pagination: {
+             el: ".swiper-pagination",
+             type: "fraction",
+             clickable: true,
+         },
+         navigation: {
+             nextEl: ".swiper-button-nextt",
+             prevEl: ".swiper-button-prevc",
+         },
+         autoplay: {
+             delay: 4000,
+             disableOnInteraction: false,
+         },
+     });
+     var swiper4 = new Swiper(".macswiper2", {
+         // grabCursor: true,
+         // effect: "creative",
+         // creativeEffect: {
+         //     prev: {
+         //         shadow: true,
+         //         translate: [0, 0, -400],
+         //     },
+         //     next: {
+         //         translate: ["100%", 0, 0],
+         //     },
+         // },
+         slidesPerView: 1,
+         spaceBetween: 0,
+         // speed: 500,
+         loop: true,
+         pagination: {
+             el: ".swiper-pagination2",
+             clickable: true,
+         },
+         autoplay: {
+             delay: 3500,
+             disableOnInteraction: false,
+         },
+     });
+     var swiper5 = new Swiper(".macswiper3", {
+         effect: 'fade',
+         speed: 500,
+         loop: true,
+         pagination: {
+             el: ".swiper-pagination3",
+             clickable: true,
+         },
+         autoplay: {
+             delay: 3500,
+             disableOnInteraction: false,
+         },
+     });
+     var swiper6 = new Swiper(".ipadswiper", {
+         speed: 500,
+         slidesPerView: 1,
+         loop: true,
+         navigation: {
+             nextEl: ".swiper-button-next2",
+             prevEl: ".swiper-button-prev2",
+         },
+         autoplay: {
+             delay: 4000,
+             disableOnInteraction: false,
+         },
+     });
+ </script>
+ </body>
 
-        function loop() {
-            $("#boat").animate({left: "73%"}, 80000, function () {
-                $("#boat").animate({left: '73%'}, 800000)
-            });
-        }
-    });
-</script>
-</body>
-</html>
+ </html>

@@ -88,12 +88,12 @@
             </div>
         </div>
     </div>
-    <div class="branded-website">
+    <div class="custom-website">
         <div class="inner-content">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 mt-auto">
-                        <img src="assets/img/branded-website.png" alt="" class="img-fluid d-block ml-auto">
+                        <img src="assets/img/custom-website.png" alt="" class="img-fluid d-block ml-auto">
                     </div>
                     <div class="col-sm-6 my-auto">
                         <div class="text-content-block ps-3">
@@ -139,11 +139,11 @@
             </div>
         </div>
     </div>
-    <div class="struggling" style="background-image: url('assets/img/struggling-bg.jpg');">
+    <div class="searching-for" style="background-image: url('assets/img/searching-for-bg.jpg');">
         <div class="container">
             <div class="row gx-sm-5">
                 <div class="col-sm-6 mt-auto">
-                    <div class="image"><img src="assets/img/struggling.png" alt="" class="img-fluid d-block ms-auto"></div>
+                    <div class="image"><img src="assets/img/searching-for.png" alt="" class="img-fluid d-block ms-auto"></div>
                 </div>
                 <div class="col-sm-6 my-auto">
                     <div class="text-content">
@@ -233,7 +233,7 @@
             </div>
         </div>
     </div>
-    <div class="some-salient py-5" id="contact-now-block" style="background-image: url('assets/img/some-salient-bg.jpg');">
+    <div class="contact-now-block py-5" id="contact-now-block" style="background-image: url('assets/img/contact-now-block-bg.jpg');">
         <div class="some-salient-inner-block">
             <div class="container">
                 <h3 class="text-white text-center mb-4">CONTACT NOW</h3>

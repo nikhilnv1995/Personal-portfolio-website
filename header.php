@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>IDX</title>
+    <title>PORTFOLIO WEBSITE</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -42,10 +42,14 @@
             </a>
             <ul class="list-inline my-auto ">
                 <li class="list-inline-item">
-                    <a href="tel:+918606765147" class="call-button"><img src="assets/img/call-logo.png" alt="call logo" class="img-fluid"><span class="d-none d-sm-inline-block ms-1">+91 8606765147</span></a>
+                    <a href="tel:+918606765147" class="call-button">
+                        <div class="icon-block"><i class="fa-solid fa-phone-volume"></i></div><span class="d-none d-sm-inline-block ms-1">+91 8606765147</span>
+                    </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="mailto:nikhilnellikkulam92@gmail.com" class="call-button"><img src="assets/img/call-logo.png" alt="call logo" class="img-fluid"><span class="d-none d-sm-inline-block ms-1">nikhilnellikkulam92@gmail.com</span></a>
+                    <a href="mailto:nikhilnellikkulam92@gmail.com" class="call-button">
+                        <div class="icon-block"><i class="fa-solid fa-envelope"></i></div><span class="d-none d-sm-inline-block ms-1">nikhilnellikkulam92@gmail.com</span>
+                    </a>
                 </li>
             </ul>
         </div>
